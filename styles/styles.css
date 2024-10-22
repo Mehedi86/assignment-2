@@ -159,6 +159,8 @@
 }
 .habit-box-content{
     text-align: center;
+    margin: 10px 20px;
+    padding: 0 10px;
 }
 .h-img{
     border-radius: 50%;
@@ -168,6 +170,29 @@
     font-size:14px ;
     color: rgba(255, 255, 255, 0.5);
     margin: 10px 0 20px 0;
+}
+.extra{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+.extra-left{
+    width: 60%;
+    padding: 4% 4% 0 4% ;
+}
+.extra-left>h1{
+    font-size: 48px;
+    color: white;
+}
+.extra-right{
+    width: 35%;
+    padding: 4% ;
+}
+.extra-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
 }
 
 @media screen and (max-width: 576px){
@@ -267,5 +292,25 @@
     /* habit-section-responsive */
     .habit-box{
         grid-template-columns: repeat(1, 1fr);
+    }
+    /* extra-section */
+    .extra{
+        width: 95%;
+        flex-direction: column;
+        margin: 4% auto;
+        padding:4% 0 ;
+    }
+    .extra-left{
+        width: 95%;
+    }
+    .extra-right{
+        width: 95%;
+        padding: 10px 10px 20px 10px;
+        text-align: center;
+    }
+    .extra-left>button{
+        width: 95%;
+        font-size: 22px;
+        padding: 10px 0;
     }
 }
