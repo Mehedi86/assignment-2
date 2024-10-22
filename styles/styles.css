@@ -194,7 +194,78 @@
     height: 100%;
     border-radius: 18px;
 }
+.bmi-calculator-title{
+    width: 48%;
+    margin: 6% auto;
+}
+.bmi-calculator-title>h1{
+    font-size: 48px;
+    color: white;
+}
+.bmi-calculator{
+    background-color: rgb(34, 34, 34);
+}
+.bmi-inner{
+    width: 70%;
+    margin: 4% auto;
 
+}
+.calculator-left{
+    width: 40%;
+}
+.bmi-chart{
+    font-size: 28px;
+    color: white;
+    padding: 4% 0;
+}
+table{
+    border-collapse: collapse;
+}
+thead>tr>td{
+    color: white;
+}
+td{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+.calculator-right>div>h1{
+    color: white;
+    font-size: 28px;
+    margin: 20px 0;
+}
+.input-box{
+    display: grid;
+    grid-template-areas: "height weght"
+                         "age    gender " 
+                         "selet  selet";
+}
+.height{
+    grid-area: height;
+}
+.weght{
+    grid-area: weght;
+}
+.age{
+    grid-area:age ;
+}
+.gender{
+    grid-area: gender;
+}
+.selet{
+    grid-area: selet;
+}
+.height,
+.weght,
+.age,
+.gender,
+.selet{
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 6px;
+}
 @media screen and (max-width: 576px){
     .nav-link{
         display: none;
@@ -312,5 +383,28 @@
         width: 95%;
         font-size: 22px;
         padding: 10px 0;
+    }
+    .bmi-inner{
+        flex-direction: column;
+    }
+    .height,
+    .weght,
+    .age,
+    .gender{
+        width: 79%;
+    }
+    
+    .bmi-inner{
+        width: 95%;
+        margin: 4% auto;
+    
+    }
+    .calculator-left{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .calculator-right{
+        width: 95%;
+        margin: 0 auto;
     }
 }
