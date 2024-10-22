@@ -352,6 +352,8 @@ td{
 }
 .copyright-message{
     text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 576px){
     .nav-link{
