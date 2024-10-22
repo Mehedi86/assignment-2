@@ -345,6 +345,14 @@ td{
     color: rgba(255, 255, 255, 0.5);
     padding: 20px 0;
 }
+.divider{
+    width: 90%;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 40px auto;
+}
+.copyright-message{
+    text-align: center;
+}
 @media screen and (max-width: 576px){
     .nav-link{
         display: none;
