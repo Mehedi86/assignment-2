@@ -355,6 +355,29 @@ td{
     padding-bottom: 40px;
     margin-bottom: 20px;
 }
+.unique-section{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.unique-title{
+    width: 49%;
+    margin: 100px auto;
+    padding: 90px 0 0 0;
+}
+.unique-title>h1{
+    color: white;
+    font-size: 48px;
+}
+.facility-machine{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 90px 0;
+}
+.facility-machine>img{
+    width: 290px;
+    height: 290px;
+}
 @media screen and (max-width: 576px){
     .nav-link{
         display: none;
@@ -529,5 +552,20 @@ td{
     .menu-button{
         visibility: visible;
         font-size: 29px;
+    }
+    .facility-machine{
+        width: 95%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .facility-machine>img{
+        width: 100%;
+        height: 290px;
+    }
+    .unique-title{
+        width: 95%;
+        margin: 100px auto;
+        padding: 90px 0 0 10px;
     }
 }
