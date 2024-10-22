@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    background-color:rgba(17, 17, 17, 1);
 }
 /* shared-section */
 
-.font{
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.inter-font{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -21,11 +27,20 @@
 .white{
     color: white;
 }
+.black{
+    background-color:rgba(17, 17, 17, 1);
+}
+.description-style{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+
+}
 /* navbar-section */
 
 .navbar{
-    max-width: 90%;
-    margin: 40px auto;
+    max-width: 70%;
+    margin: 60px auto;
     justify-content: space-between;
 }
 .site-name{
@@ -33,7 +48,7 @@
     font-style: italic;
 }
 .nav-link{
-    width: 30%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
     border: 1px solid rgb(63, 62, 62);
@@ -49,4 +64,78 @@
     border-radius: 46px;
     font-weight: 600;
     padding: 10px 20px;
+}
+
+/* banner-section */
+.banner{
+    max-width: 70%;
+    margin: 100px auto;
+    position: relative;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-title{
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 2rem 0;
+}
+.btn-left , .btn-right{
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.btn-left{
+    background-color:rgba(230, 83, 60, 1) ;
+    border: none;
+}
+.btn-right{
+    border: 2px solid white;
+    background-color:rgba(17, 17, 17, 1);
+    margin-left: 20px;
+}
+.banner-img-box{
+    width: 50%;
+    margin-left: 200px;
+}
+.v-350{
+    width: 206px;
+    height: 96px;
+    background-color: rgba(48, 48, 48, 0.54);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 400px;
+    right: 480px;
+    padding: 14px;
+}
+
+.circle{
+    background-color: rgba(230, 83, 60, 1) ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.circle-description{
+    background-color: none;
+}
+.v-500{
+    width: 206px;
+    height: 96px;
+    background-color: rgba(48, 48, 48, 0.54);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 120px;
+    right: 120px;
+    padding: 14px 0 14px 40px;
+}
+
+.v-500>h1{
+    font-size: 40px;
+    font-weight: 900;
 }
