@@ -65,7 +65,9 @@
     font-weight: 600;
     padding: 10px 20px;
 }
-
+.menu-button{
+    visibility: hidden;
+}
 /* banner-section */
 .banner{
     max-width: 70%;
@@ -513,5 +515,9 @@ td{
     .part-3{
         width: 95%;
         padding: 20px 20px;
+    }
+    .menu-button{
+        visibility: visible;
+        font-size: 29px;
     }
 }
