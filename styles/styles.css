@@ -70,7 +70,6 @@
 .banner{
     max-width: 70%;
     margin: 100px auto;
-    position: relative;
 }
 .banner-content{
     width: 50%;
@@ -98,6 +97,7 @@
 .banner-img-box{
     width: 50%;
     margin-left: 200px;
+    position: relative;
 }
 .v-350{
     width: 206px;
@@ -138,4 +138,100 @@
 .v-500>h1{
     font-size: 40px;
     font-weight: 900;
+}
+
+@media screen and (max-width: 576px){
+    .nav-link{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .navbar{
+        max-width: 90%;
+        margin: 20px auto;
+        justify-content: space-between;
+    }
+    .site-name{
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+    .banner{
+        max-width: 95%;
+        margin: 60px auto;
+    }
+    .banner-title{
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 2rem 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .title-des{
+        width: 68%;
+    }
+    .banner-btn-box{
+        display: flex;
+    }
+    .btn-left , .btn-right{
+        padding: 2% 8%;
+        border-radius: 42px;
+        font-size: 1.2rem;
+    }
+    .banner-img-box{
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .v-500{
+        width: 120px;
+        height: 68px;
+        background-color: rgba(48, 48, 48, 0.54);
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        position: absolute;
+        top: 90px;
+        left: 220px;
+        padding: 4px 20px;
+    }
+    .v-500>h1{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .v-500>p{
+        font-size: 12px;
+    }
+    .v-350{
+        width: 120px;
+        height: 48px;
+        background-color: rgba(48, 48, 48, 0.54);
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        position: absolute;
+        top: 300px;
+        right: 240px;
+        padding: 10px;
+    }
+    .circle{
+        background-color: rgba(230, 83, 60, 1) ;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 6px;
+    }
+    .circle-description{
+        padding-top: 10px;
+    }
+    .circle-description>h1{
+        font-size: 16px;
+    }
+    .circle-description>p{
+        font-size: 12px;
+    }
 }
