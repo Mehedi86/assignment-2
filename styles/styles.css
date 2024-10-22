@@ -302,6 +302,47 @@ td{
     object-fit: cover;
     border-radius: 14px;
 }
+/* footer */
+.main-footer{
+    width: 70%;
+    margin: 0 auto;
+}
+.part-1>h1{
+    font-size: 68px;
+}
+.part-1>p{
+    font-size: 16px;
+}
+.part-1{
+    width: 45%;
+    padding: 20px 40px;
+}
+.part-2{
+    width: 25%;
+    padding: 20px;
+}
+.part-2>h1{
+    color: white;
+    font-size: 32px;
+}
+.part-2>p{
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+}
+.part-3{
+    width: 25%;
+    padding: 20px;
+}
+.part-3>h1{
+    color: white;
+    font-size: 32px;
+}
+.part-3>p{
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+}
 @media screen and (max-width: 576px){
     .nav-link{
         display: none;
@@ -455,5 +496,22 @@ td{
         background-color: rgba(255, 255, 255, 0.1);
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .main-footer{
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .part-1{
+        width: 95%;
+        padding: 20px 20px;
+    }
+    .part-2{
+        width: 95%;
+        padding: 20px 20px;
+    }
+    .part-3{
+        width: 95%;
+        padding: 20px 20px;
     }
 }
